@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th=" http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">EMAIL</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${users}">
+            <td th:text="user."> </td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+</body>
+</html>
+<!--//th:each="Users : ${users}"
+<div class="Container">-->
+<!--    <table class="table">-->
+<!--        <thead class="thead-dark">-->
+<!--        <tr>-->
+<!--            <th scope="col">ID</th>-->
+<!--            <th scope="col">NAME</th>-->
+<!--            <th scope="col">EMAIL</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr th:each ="user :  ">-->
+<!--            <td th:text="${User.item_no}">1</td>-->
+<!--            <td th:text="${User.item_name}">pizza</td>-->
+<!--            <td th:text="${User.item_type}">vag</td>-->
+<!--            <td th:text="${User.location}">mp nager</td>-->
+<!--            <td th:text="${User.User_name}">Mark</td>-->
+<!--        </tr>-->
+
+
+<!--        </tbody>-->
+<!--    </table>-->
+<!--    </body>-->
+<!--</div>-->
